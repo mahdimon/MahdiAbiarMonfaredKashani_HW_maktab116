@@ -39,8 +39,3 @@ with open("1-task5.csv","w") as f:
     avg = sum(sorteddict.values())/len(sorteddict.values())
     writer.writerow([avg])               
 
-    
-
-      
-    
-    
