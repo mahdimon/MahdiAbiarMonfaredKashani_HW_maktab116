@@ -1,15 +1,22 @@
 import csv
 
+def try_float(s):
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
 with open("grades.csv","+w") as gradescsv:
     with open("1-file.txt") as f :
         lines = f.readlines()
         csvwriter = csv.writer(gradescsv)
         for line in lines:
             line = [i.strip() for i in line.split(",")]
+            line = [line[0]]+[try_float(i) for i in line if try_float(i)is not None]
             csvwriter.writerow(line)
     gradescsv.seek(0)
     reader = csv.reader(gradescsv)
-    avgdict = {name:[int(i) for i in grades] for name,*grades in reader}
+    avgdict = {name:[float(i) for i in grades] for name,*grades in reader}
     avgdict = {x: round(sum(y)/len(y),2) for x, y in avgdict.items()}
     
 with open("1-task1.csv","w") as f:
