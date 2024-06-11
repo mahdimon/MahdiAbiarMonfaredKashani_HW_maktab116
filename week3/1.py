@@ -26,13 +26,13 @@ with open("1-task1.csv","w") as f:
     
 with open("1-task2.csv","w") as f:
     writer = csv.writer(f)
-    sorteddict = dict(sorted(avgdict.items(),key=lambda x : x[1] ))
+    sorteddict = dict(sorted(avgdict.items(),key=lambda x : (x[1],x[0] )))
     for name,moadel in sorteddict.items():
         writer.writerow([name,moadel]) 
 
 with open("1-task3.csv","w") as f:
     writer = csv.writer(f)
-    for name,moadel in list(sorteddict.items())[-1:-4:-1]:
+    for name,moadel in list(sorteddict.items())[:3]:
         writer.writerow([name,moadel]) 
         
         
