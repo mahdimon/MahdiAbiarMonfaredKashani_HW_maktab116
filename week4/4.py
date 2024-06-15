@@ -13,7 +13,7 @@ def process_timer(func):
         start = time()
         result = func(*args,**kwargs)
         end = time()
-        print(f"{func.__name__}{args} took",(end-start)*1000,"ms")
+        print(f"{func.__name__}{args} took",f"{(end-start)*1000:.4f}","ms")
         return result 
     return execution
     
