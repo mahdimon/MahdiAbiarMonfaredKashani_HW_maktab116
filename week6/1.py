@@ -51,11 +51,11 @@ class Date:
             gy2 = gy + 1
         else:
             gy2 = gy
-            days = 355666 + (365 * gy) + ((gy2 + 3) // 4) - ((gy2 + 99) // 100) + ((gy2 + 399) // 400) + gd + g_d_m[gm - 1]
-            jy = -1595 + (33 * (days // 12053))
-            days %= 12053
-            jy += 4 * (days // 1461)
-            days %= 1461
+        days = 355666 + (365 * gy) + ((gy2 + 3) // 4) - ((gy2 + 99) // 100) + ((gy2 + 399) // 400) + gd + g_d_m[gm - 1]
+        jy = -1595 + (33 * (days // 12053))
+        days %= 12053
+        jy += 4 * (days // 1461)
+        days %= 1461
         if (days > 365):
             jy += (days - 1) // 365
             days = (days - 1) % 365
@@ -72,10 +72,10 @@ class Date:
         return  Gregorian(self.year,self.month,self.day).to_hijri().datetuple()
        
 
-print(Date.is_valid_date('29-2-2005'))
+print(Date.is_valid_date('30-50-20'))
 print(Date.is_valid_date(29,2,2004))
-a = Date.from_string('31-12-1933')
-b = Date(1,2,1999)
+a = Date.from_string('3-12-1933')
+b = Date(2,7,2024)
 print(b.year)
 year , month , day = b.to_shamsi()
 print(f"{year}/{month}/{day}")            
