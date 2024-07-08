@@ -1,7 +1,7 @@
+import exeptions as err
+from auth import Authenticator
 import sys
 sys.path.append("/home/mahdimon/programming/maktab/week7/moduls")
-from auth import Authenticator
-import exeptions as err
 
 while True:
     command = input("""enter:
@@ -16,13 +16,14 @@ while True:
             case "1":
                 username = input("username: ")
                 password = input("password: ")
-                Authenticator.add_user(username,password)
+                Authenticator.add_user(username, password)
             case "2":
                 username = input("username: ")
                 password = input("password: ")
-                Authenticator.login(username,password)
+                Authenticator.login(username, password)
             case "3":
                 username = input("username: ")
-                print(f"{username} is{'' if Authenticator.is_logged_in(username) else ' not'} logged in")
+                print(
+                    f"{username} is{'' if Authenticator.is_logged_in(username) else ' not'} logged in")
     except err.AuthExeption as e:
-        print("error:",type(e).__name__)
+        print("error:", type(e).__name__)

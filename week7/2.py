@@ -1,15 +1,20 @@
 class Add(int):
-    def __call__(self, value = None):
+    def __call__(self, value=None):
         return self.__class__(self + value)
 
+
 class Add2():
-    def __init__(self,value) -> None:
+    def __init__(self, value) -> None:
         self.sum = value
+
     def __call__(self, value):
         self.sum += value
         return self
+
     def __str__(self):
         return str(self.sum)
+
+
 print("first method with inheritance")
 print(Add(10))
 print(Add(10)(11))
