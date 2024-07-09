@@ -1,7 +1,7 @@
-import exeptions as err
-from auth import Authenticator
 import sys
 sys.path.append("/home/mahdimon/programming/maktab/week7/moduls")
+import exeptions as err
+from auth import Authenticator
 
 while True:
     command = input("""enter:
