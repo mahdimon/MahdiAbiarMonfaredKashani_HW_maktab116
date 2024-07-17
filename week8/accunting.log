@@ -1,0 +1,4 @@
+2024-07-17 15:58:01,190 function new called with args Namespace(command='new', bank_name='melli', card_number=1111, balance=100, func=<function new at 0x7f3950c05a20>)
+2024-07-17 15:58:59,927 function expence called with args Namespace(command='expence', card_number=1111, amount=10, title='water', save=False, func=<function expence at 0x7f53e2889b40>)
+2024-07-17 15:59:29,653 function expence called with args Namespace(command='expence', card_number=1111, amount=10, title='water', save=True, func=<function expence at 0x7f603041db40>)
+2024-07-17 15:59:41,642 function expence called with args Namespace(command='expence', card_number=1111, amount=None, title='water', save=False, func=<function expence at 0x7fb3016a9b40>)
