@@ -1,3 +1,22 @@
 --2024-08-12 00:36:56--  http://sdfs/
 Resolving sdfs (sdfs)... failed: No address associated with hostname.
 wget: unable to resolve host address ‘sdfs’
+--2024-08-13 18:47:36--  http://dksfhsk/
+Resolving dksfhsk (dksfhsk)... failed: No address associated with hostname.
+wget: unable to resolve host address ‘dksfhsk’
+--2024-08-13 18:48:35--  http://google.com/
+Resolving google.com (google.com)... 216.239.38.120, 2001:4860:4802:32::78
+Connecting to google.com (google.com)|216.239.38.120|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.google.com/ [following]
+--2024-08-13 18:48:37--  http://www.google.com/
+Resolving www.google.com (www.google.com)... 216.239.38.120, 2001:4860:4802:32::78
+Reusing existing connection to google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html’
+
+     0K .......... .........                                   56.5K=0.4s
+
+2024-08-13 18:48:38 (56.5 KB/s) - ‘index.html’ saved [20329]
+
