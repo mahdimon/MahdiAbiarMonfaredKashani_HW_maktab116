@@ -45,12 +45,15 @@ def count_dst(start_datetime, end_datetime):
     if year_difference > 1:
         dst_count += (year_difference - 1) * 2
         
-    first_dst = jdatetime.datetime(year=end_datetime.year , month = 1 , day = 2)
-    second_dst = jdatetime.datetime(year=end_datetime.year , month = 6 , day = 31)
-    if end_datetime > first_dst:
-        dst_count += 2
-    elif end_datetime > second_dst:
-        dst_count += 1
+
+    
+    if year_difference >= 1:
+        first_dst = jdatetime.datetime(year=end_datetime.year , month = 1 , day = 2)
+        second_dst = jdatetime.datetime(year=end_datetime.year , month = 6 , day = 31)
+        if end_datetime > second_dst:
+            dst_count += 2
+        elif end_datetime > first_dst:
+            dst_count += 1
 
 
     return dst_count
