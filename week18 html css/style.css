@@ -1,0 +1,215 @@
+/* home work one */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 35%;
+  min-width: min-content;
+  padding: 7px;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#info,
+#lsc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+#id {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#post {
+  width: 100%;
+  display: block;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+#image_wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+#mute_button,
+#tag_button {
+  background-color: rgb(29, 28, 28);
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mute_button {
+  right: 0px;
+}
+#tag_button {
+  left: 0px;
+}
+#view_count {
+  display: inline-block;
+  margin-top: 10px;
+}
+#caption {
+  margin-top: 5px;
+  font-size: larger;
+}
+
+.gray {
+  color: gray;
+}
+.larger {
+  margin-top: 8px;
+  font-size: larger;
+}
+.small {
+  font-size: small;
+  margin-top: 8px;
+}
+
+/* home work 2 */
+@font-face {
+  font-family: "yekan-iran";
+  src: url("fonts/Qs_Iranyekan.ttf") format("truetype");
+}
+.rezome {
+  font-family: yekan-iran;
+  width: 50%;
+  min-width: min-content;
+  margin: 20px auto 20px auto;
+  display: flex;
+  gap: 5%;
+  align-items: top;
+}
+.rezome img {
+  width: 30%;
+  object-fit: cover;
+}
+.rezome_table {
+  flex-grow: 1;
+  text-align: end;
+}
+.rezome_name {
+  font-size: xx-large;
+  color: blue;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.rezome_info {
+  display: grid;
+  min-width: min-content;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 4);
+  direction: rtl;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+.rezome_info span {
+  font-size: large;
+  text-align: center;
+}
+.rezome_info h6 {
+  font-size: larger;
+  display: inline;
+  color: blue;
+}
+.rezome_info div {
+  direction: rtl;
+  text-align: right;
+  text-wrap: nowrap;
+}
+/* home work 3 */
+.stats{
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    color: #b9b9b9aa;
+    margin: 20px auto 20px auto;
+    
+}
+table{
+    width: 100%;
+    margin: auto;
+}
+tr {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+thead th {
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+thead th img {
+    width: 50px;
+    height: auto;
+}
+/* home work 4 */
+.sidebar {
+    width: 40%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar h2 {
+
+    padding: 0px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu {
+
+
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0px 20px;
+    font-size: 1.7rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li:hover {
+    background-color: #d7d7d7;
+}
+
+.menu li span {
+    padding-left: 10px;
+    font-size: 2.6rem;
+    color: #6e6e6e;
+}
+
